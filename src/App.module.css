@@ -1,0 +1,85 @@
+.wrapper {
+  max-width: 70rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.main{
+  min-height: 20rem;
+  width: 48.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  background: var(--gray-700);
+  padding-inline: 2rem;
+  border-radius: 4px;
+  padding: 0rem 2rem 2rem;
+  
+}
+
+.Tasks{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 48.5rem;
+  gap:1rem;
+}
+
+.header{
+font-size:  14px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+color: var(--blue);
+width: 48.5rem;
+}
+
+.header p{
+  width: auto;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 1.5rem;
+  
+}
+
+.concluidas{
+  color: var(--purple);
+}
+
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+.main hr{
+  width: 100%;
+  opacity: 10%;
+}
+
+.noTasks{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  color: var(--gray-300);
+  line-height: 1.5rem;
+}
+
+.someTasks{
+  display: none;
+}
+
+

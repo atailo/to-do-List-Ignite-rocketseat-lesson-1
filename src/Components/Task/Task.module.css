@@ -1,0 +1,107 @@
+.TaskItem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toDo{
+  display: flex;
+  flex-direction: row;
+  gap:12px;
+  align-items: center;
+  width: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  background: var(--gray-500);
+  border-radius: 8px;
+  justify-content: flex-start;
+  width: 48.5rem;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toDoCompleted{
+  display: flex;
+  flex-direction: row;
+  gap:12px;
+  align-items: center;
+  width: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  background: var(--gray-500);
+  border-radius: 8px;
+  justify-content: flex-start;
+  width: 48.5rem;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  opacity: 40%;
+
+}
+
+.toDoContent{
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  color: var(--gray-100);
+}
+
+.contentCompleted {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+
+.Trash{
+  display: flex;
+  justify-content: flex-end;
+  color: var(--gray-300);
+  background: transparent;
+  padding: 0.3rem;
+  border: 0;
+}
+
+.Trash:hover{
+  color: var(--danger);
+  background: var(--gray-400);
+  border-radius: 4px;
+}
+
+.conclude{
+    width: 1.3em;
+    height: 1.3em;
+    background-color: transparent;
+
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid var(--blue);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.conclude:hover{
+  background-color: var(--blueDark);
+  opacity: 0.2;
+}
+.conclude:checked{
+  background-color: var(--purpleDark);
+  border:none;
+  appearance: var(--gray-100);
+  background-image: url(../../assets/check.svg);
+  background-repeat: no-repeat;
+  background-size: 14px;
+  background-position: center;
+
+}
+
+.conclude:checked:hover{
+  background-color: var(--purple);
+  opacity: 1;
+}
